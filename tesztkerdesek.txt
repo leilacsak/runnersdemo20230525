@@ -1,6 +1,6 @@
-Név:
-Szak:
-Neptun azonosító:
+Név:Csák Leila
+Szak: MI
+Neptun azonosító: LXE...
 
 Kérdés 1:
 Melyik szerepel az Agile Manifestoban az alábbiak közül?
