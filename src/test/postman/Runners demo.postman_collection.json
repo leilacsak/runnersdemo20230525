@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "3280806a-0a27-445f-b66a-efc67205ca2f",
+		"_postman_id": "c4c613fe-1e91-48ac-9c5f-13498d7a3356",
 		"name": "Runners demo",
 		"description": "Runners Demo postman collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "9701363"
+		"_exporter_id": "27790308"
 	},
 	"item": [
 		{
@@ -132,6 +132,28 @@
 						"runner",
 						"1",
 						"addlaptime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTallestRunnersName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/runner/tallestrunnersname",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"runner",
+						"tallestrunnersname"
 					]
 				}
 			},
