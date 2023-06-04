@@ -77,6 +77,23 @@ public class RunnerRestController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Runner with ID " + id + " not found");
         }
     }
+
+    @GetMapping("/averageheight")
+    public double getAverageHeight() {
+        List<RunnerEntity> runnerList = runnerRepository.findAll();
+        if (!runnerList.isEmpty()) {
+            int sumOfHeights = 0;
+            int numberOfHeights = 0;
+            for(int i = 0; i < runnerList.size(); i++){
+                sumOfHeights += runnerList.get(i).getRunnerHeight();
+                numberOfHeights++;
+            }
+            return (double) sumOfHeights / numberOfHeights;
+        } else {
+            return -1.00;
+        }
+    }
+
     public static class LapTimeRequest {
         private int lapTimeSeconds;
 
